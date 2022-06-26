@@ -1,7 +1,10 @@
 const express = require("express");
-const app = express();
-const mongoose = require("mongoose");
 const path = require("path");
+const mongoose = require("mongoose");
+
+mongoose.connect
+
+const app = express();
 
 //Setting view engine to ejs
 //We use path.join to allow us to run the application from anywhere. Not just while in the folder
