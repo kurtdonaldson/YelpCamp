@@ -10,4 +10,4 @@ const CampgroundSchema = new Schema({
 })
 
 //Take the schema and tell mongoose I want to make a model. 
-module.export = mongoose.model('Campground', CampgroundSchema);
+module.exports = mongoose.model('Campground', CampgroundSchema);
