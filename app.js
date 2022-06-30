@@ -22,14 +22,14 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-// app.get("/makecampground", async (req, res) => {
-//   const camp = new Campground({
-//     title: 'My Backyard',
-//     description: 'Cheap camping'
-//   })
-//   await camp.save();
-//   res.send(camp)
-// });
+app.get("/makecampground", async (req, res) => {
+  const camp = new Campground({
+    title: 'My Backyard',
+    description: 'Cheap camping'
+  })
+  await camp.save();
+  res.send(camp)
+});
 
 app.listen(3000, () => {
   console.log("Listening on Port 3000");
